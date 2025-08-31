@@ -3,9 +3,10 @@
 
 const express = require("express");
 const mongoose = require("mongoose");
+const cors = require("cors");
 
 const app = express(); 
-
+app.use(cors({ origin: "http://localhost:5173" }));
 const productRouter = require("./Routes/ProductRoute");
 app.use("/products", productRouter);
 

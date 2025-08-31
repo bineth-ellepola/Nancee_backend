@@ -4,7 +4,6 @@ const cloudinary = require("./cloudinaryConfig");
 
 
 
-
 const storage = new CloudinaryStorage({
   cloudinary: cloudinary,
   params: {
