@@ -20,4 +20,5 @@ router.put("/update/:id", upload.array("images", 5), ProductController.updatePro
 router.delete("/delete/:id", ProductController.deleteProduct);
 
 
+
 module.exports = router;

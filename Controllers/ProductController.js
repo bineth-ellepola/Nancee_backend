@@ -70,7 +70,7 @@ const getProductById = async (req, res, next) => {
 };
 
 
-// Update product by ID
+// Update  by ID
 const updateProduct = async (req, res, next) => {
   const { id } = req.params;
   const { name, description, brand, category, priceLKR, stock } = req.body;
@@ -127,6 +127,8 @@ const deleteProduct = async (req, res, next) => {
     return res.status(500).json({ message: "Error deleting product", error: err.message });
   }
 };
+
+
 
 exports.addProduct = addProduct;
 exports.getAllProducts = getAllProducts;
